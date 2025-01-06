@@ -1,0 +1,73 @@
+body 
+{
+    background-color: rgb(23, 47, 126);
+}
+h1
+{
+    color: rgb(255, 255, 235);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 500%;
+}
+h2
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(255, 255, 235);
+    text-align: center;
+    font-size: 170%;
+    margin-top: -40px;
+}
+p
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(255, 255, 235);
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%; 
+}
+
+.cardCenter {
+    display: block;
+    margin: auto;
+    border: 0px;
+    border-radius: 20px;
+}
+img {
+    width: 430px;
+    height: auto;
+}
+
+@media (min-width: 700px) {
+
+    h1 {
+        font-size: 700%;
+    }
+    h2 {
+        margin-top: -70px;
+    }
+
+ }
+
+@media (min-width: 1000px) {
+
+    h1 {
+        font-size: 1000%;
+    }
+    h2 {
+        font-size: 200%;
+        margin-top: -110px;
+    }
+    p {
+        max-width: 700px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+ }
+ @media (max-width: 500px) {
+    p {
+        
+        text-align: justify;
+        margin: 63 auto;
+    }
+ }
