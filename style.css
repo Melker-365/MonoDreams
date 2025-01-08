@@ -10,13 +10,13 @@ body
 h1
 {
     color: rgb(255, 255, 235);
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, 'Anton';
     text-align: center;
     font-size: 500%;
 }
 h2
 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, 'Anton';
     color: rgb(255, 255, 235);
     text-align: center;
     font-size: 170%;
@@ -24,7 +24,7 @@ h2
 }
 h3{
     color: rgb(255, 255, 235);
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, 'Anton';
     text-align: center;
     font-size: 300%;
     margin-left: 30px;
@@ -32,7 +32,7 @@ h3{
 }
 p
 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, 'Anton';
     color: rgb(255, 255, 235);
     text-align: center;
     margin-left: 50px;
