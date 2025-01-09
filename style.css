@@ -1,28 +1,32 @@
-body 
-{
+body {
     background-color: rgb(23, 47, 126);
     min-height: 100vh;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0px;
-
 }
-h1
-{
+
+h1 {
     color: rgb(255, 255, 235);
     font-family: Impact, 'Anton';
     text-align: center;
     font-size: 500%;
+    overflow: hidden;  /* Ensure overflow is hidden */
+    position: relative;
+    animation: reveal 1s ease-in-out forwards;  /* Apply animation */
 }
-h2
-{
+
+
+
+h2 {
     font-family: Impact, 'Anton';
     color: rgb(255, 255, 235);
     text-align: center;
     font-size: 170%;
     margin-top: -40px;
 }
-h3{
+
+h3 {
     color: rgb(255, 255, 235);
     font-family: Impact, 'Anton';
     text-align: center;
@@ -30,17 +34,17 @@ h3{
     margin-left: 30px;
     margin-right: 30px;
 }
-p
-{
+
+p {
     font-family: Impact, 'Anton';
     color: rgb(255, 255, 235);
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
 }
-a
-{
-    color: rgb(255, 255, 235);;
+
+a {
+    color: rgb(255, 255, 235);
 }
 
 img {
@@ -51,9 +55,11 @@ img {
     border: 0px;
     border-radius: 20px;
 }
+
 .break {
     margin-top: 300px;
 }
+
 .top {
     background-color: rgb(1, 17, 62);
     position: absolute;
@@ -61,6 +67,7 @@ img {
     left: 0;
     width: 100%;
 }
+
 .dark {
     background-color: rgb(1, 17, 62);
     padding-bottom: 50px;
@@ -74,7 +81,8 @@ img {
     flex-direction: column;
     margin-bottom: 0;
 }
-footer{
+
+footer {
     background-color: rgb(2, 6, 22);
     left: 0;
     width: 100%;
@@ -90,82 +98,103 @@ footer{
     flex-direction: row;
     justify-content: space-evenly;
     gap: 20px;
-    
 }
+
 .cards img {
     width: 70%;
-    max-width: 1000px;
+    max-width: 600px;
     border-radius: 5px;
     margin-bottom: 30px;
+    transition: 0.5s;
+}
+.cards img:hover {
+    width: 75%;
+    max-width: 650px;
 }
 
 @media (min-width: 700px) {
-
     h1 {
         font-size: 700%;
     }
+
     h2 {
         margin-top: -70px;
     }
+
     h3 {
         font-size: 450%;
     }
+
     .break {
         margin-top: 350px;
     }
 }
-@media (min-width: 1000px) {
 
+@media (min-width: 1000px) {
     h1 {
         font-size: 1000%;
     }
+
     h2 {
         font-size: 300%;
         margin-top: -110px;
     }
+
     h3 {
         font-size: 600%;
     }
+
     p {
         max-width: 700px;
         text-align: center;
         margin: 0 auto;
     }
+
     img {
         width: 500px;
     }
+
     .break {
         margin-top: 550px;
     }
+}
 
- }
- 
-
-    
-
-
- @media (max-width: 500px) {
+@media (max-width: 500px) {
     h1 {
         font-size: 90px;
     }
+
     p {
-        
         text-align: justify;
         margin: 0 auto;
     }
+
     img {
         width: 230px;
         border-radius: 15px;
     }
-    .break{
+
+    .break {
         margin-top: 425px;
     }
- }
- @media (max-width: 350px) {
+}
+
+@media (max-width: 350px) {
     h1 {
         font-size: 80px;
     }
-    .break{
+
+    .break {
         margin-top: 350px;
+    }
+}
+
+@keyframes reveal {
+    0% {
+
+        opacity: 50%;
+    }
+    100% {
+        opacity: 100%;
     }
 }
