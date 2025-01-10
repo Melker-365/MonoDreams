@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(23, 47, 126);
+    /**/
+    background-color: black;
     min-height: 100vh;
     margin-left: 0;
     margin-right: 0;
@@ -13,17 +14,24 @@ h1 {
     font-size: 500%;
     overflow: hidden;  /* Ensure overflow is hidden */
     position: relative;
-    animation: reveal 1s ease-in-out forwards;  /* Apply animation */
+    
+
 }
 
-
-
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
 h2 {
     font-family: Impact, 'Anton';
     color: rgb(255, 255, 235);
     text-align: center;
     font-size: 170%;
-    margin-top: -40px;
+    overflow:visible;
+
+
 }
 
 h3 {
@@ -70,6 +78,48 @@ img {
 
 .dark {
     background-color: rgb(1, 17, 62);
+    padding-bottom: 0;
+    flex-grow: 1;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30%;
+    overflow: hidden;
+}
+.lightOrange{
+    background-color: rgb(255, 123, 0);
+    padding-bottom: 50px;
+    flex-grow: 1;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;  
+}
+.darkOrange {
+    background-color: rgb(255, 60, 0);
+    padding-bottom: 50px;
+    flex-grow: 1;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;   
+    justify-content:space-evenly;
+    align-items: center;
+    position: relative;
+}
+.light {
+    background-color: rgb(23, 47, 126);
     padding-bottom: 50px;
     flex-grow: 1;
     margin-left: 0px;
@@ -89,9 +139,31 @@ footer {
     position: relative;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-bottom: 0px;
-    bottom: 0;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+    justify-content:flex-start;
+
 }
+.footer-column {
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    width: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+footer img{
+    width: 30vw;
+    max-width: 250px;
+    margin-top: 0;
+    margin-bottom:50px;
+    
+}
+
+
 
 .cards {
     display: flex;
@@ -104,12 +176,16 @@ footer {
     width: 70%;
     max-width: 600px;
     border-radius: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 90px;
     transition: 0.5s;
+    opacity: 90%;
+    background-color:black;
 }
 .cards img:hover {
     width: 75%;
     max-width: 650px;
+    opacity: 120%;
+    box-shadow: 0 0 20px black;
 }
 
 @media (min-width: 700px) {
@@ -118,7 +194,7 @@ footer {
     }
 
     h2 {
-        margin-top: -70px;
+        font-size: 200%;
     }
 
     h3 {
@@ -127,6 +203,12 @@ footer {
 
     .break {
         margin-top: 350px;
+    }
+    .dark {
+        padding-bottom: 10%;
+    }
+    .mail {
+        font-size: 30px;
     }
 }
 
@@ -137,7 +219,7 @@ footer {
 
     h2 {
         font-size: 300%;
-        margin-top: -110px;
+
     }
 
     h3 {
@@ -157,6 +239,10 @@ footer {
     .break {
         margin-top: 550px;
     }
+    .dark {
+        padding-bottom: 20%;
+    }
+    
 }
 
 @media (max-width: 500px) {
@@ -193,8 +279,10 @@ footer {
     0% {
 
         opacity: 50%;
+        background-color: black;
     }
     100% {
         opacity: 100%;
     }
 }
+
