@@ -8,7 +8,7 @@ html, body {
     justify-content: flex-start;
     align-items: center;
     margin: 0 auto;
-    overflow-x:hidden;
+    overflow-x: hidden;
 
     background-color: rgb(84, 165, 195);
     background-color: rgb(33, 33, 34);
@@ -17,14 +17,16 @@ html, body {
     
 
 }
+
 .header {
 
     background-color: rgb(10,10,10);
-    width: 100%;
+    width: 100vw;
     height: clamp(30px, 15vw, 60px);
     position: absolute;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 auto;
+    
 
 }
 .inner-header{
@@ -84,21 +86,42 @@ html, body {
 .inner-header a{
 
     font-size: clamp(0.2em, 3vw, 1.5em);
-    padding: 1vw, 2vw;
+    padding: 0 1vw;
     margin: 0 auto;
-    background-color: black;
+    background-color: rgb(92, 66, 66);
     color: white;
     border-radius: 5px;
-    transition: background-color 0.2s ease-in-out, padding 0.2s ease-in-out;
+    background-image: linear-gradient(180deg, black, black, rgb(255, 174, 0), rgb(255, 72, 0));
+    background-size: 100% 300%;
+    background-position: top;
+    transition: background-position 0.2s ease-in-out, padding 0.2s ease-in-out;
 
 
 }
 
 .inner-header a:hover{
 
-    background-color: rgb(161, 35, 0);
-    padding: 2% 2vw;
+    background-color: rgb(161, 35, 0); 
+    padding: 0vw 3vw;
+    background-position: bottom;
     
+ 
+    
+}
+
+@keyframes hover-btn {
+
+    0% {
+        padding: 50% auto;
+    }
+    10% {
+        padding: 50% 0;
+    }
+    100% {
+        background-position: bottom;
+        padding: 0 1vw;
+    }
+
 }
 
 h2 {
