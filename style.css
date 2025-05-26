@@ -24,8 +24,8 @@ html, body {
     width: 100vw;
     height: clamp(30px, 15vw, 60px);
     position: absolute;
-    margin: 0 auto;
-    padding: 0 auto;
+    margin: 0;
+    padding: 0;
     
 
 }
